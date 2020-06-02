@@ -6,8 +6,8 @@
   "scripts": {
     "start": "webpack-dev-server --config ./webpack.config.js --mode-development",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack -p",
-    "deploy": "gh-pages -d build"
+    "build": "webpack",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "Jodi Pranata <pranatajodi@gmail.com>",
