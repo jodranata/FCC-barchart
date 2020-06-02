@@ -31,6 +31,7 @@ svgContainer
   .attr('transform', 'rotate(-90)')
   .attr('x', -200)
   .attr('y', xPadding + 20)
+  .attr('class', 'info')
   .text('Gross Domestic Product');
 
 svgContainer
@@ -94,6 +95,7 @@ const handleHoverIn = (barWidth, barHeight, xPos, data) => {
     .attr('data-date', data[0])
     .style('left', `${xPos}px`)
     .style('top', `${height - barHeight / 2}px`)
+
     .style('transform', `translate(${xPadding}px, ${yPadding}px)`);
 };
 
@@ -140,7 +142,7 @@ const renderChart = (xScale, yScale, dataArr) => {
     .attr('y', d => height - yScale(d[1]))
     .style('height', d => yScale(d[1]))
     .style('width', barWidth)
-    .style('fill', 'blue')
+    .style('fill', '#f0f0f0')
     .on('mouseover', d => {
       const barHeight = yScale(d[1]);
       const xPos = xScale(new Date(d[0]));

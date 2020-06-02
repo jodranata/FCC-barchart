@@ -10,13 +10,13 @@
   align-items: center;
   justify-content: center;
   font-family: 'Roboto';
-  background-color: #708090;
+  background-color: #f0f0f0;
   background-size: 64px 128px;
 }
 .main .container {
   height: 650px;
   width: 950px;
-  background-color: #d3d3d3;
+  background-color: #292929;
   display: flex;
   flex-direction: column;
   padding: 10px 20px;
@@ -31,6 +31,7 @@
 .main .container #title {
   text-align: center;
   font-size: 2.5em;
+  color: #f0f0f0;
 }
 .main .container .chart-container {
   position: absolute;
@@ -48,30 +49,37 @@
   height: 50px;
   padding: 2px;
   font: 12px;
-  background: lightsteelblue;
-  box-shadow: 1px 1px 10px;
+  background: #292929;
+  box-shadow: 1px 1px 10px #141414;
   border-radius: 2px;
   pointer-events: none;
+  color: #f0f0f0;
 }
 
 .overlay {
   position: absolute;
-  background: #fff;
+  background: #292929;
   pointer-events: none;
 }
 
-#y-axis path {
-  stroke: black;
+#y-axis path,
+#x-axis path {
+  stroke: #f0f0f0;
   stroke-width: 1;
   fill: none;
 }
 
-#x-axis path {
-  stroke: black;
-  stroke-width: 1;
-  fill: none;
+#y-axis text,
+#x-axis text {
+  fill: #f0f0f0;
+}
+
+#y-axis line,
+#x-axis line {
+  stroke: #f0f0f0;
 }
 
 .info {
   font-size: 0.8em;
+  fill: #f0f0f0;
 }
