@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto';
+  background-color: #f0f0f0;
+  background-size: 64px 128px;
+}
+.main .container {
+  height: 650px;
+  width: 950px;
+  background-color: #292929;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  align-self: center;
+  position: relative;
+}
+@media (min-width: 1000px) {
+  .main .container {
+    box-shadow: 2px 2px 20px;
+  }
+}
+.main .container #title {
+  text-align: center;
+  font-size: 2.5em;
+  color: #f0f0f0;
+}
+.main .container .chart-container {
+  position: absolute;
+  top: 6em;
+  left: 30px;
+}
+
+#tooltip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  text-align: center;
+  width: 150px;
+  height: 50px;
+  padding: 2px;
+  font: 12px;
+  background: #292929;
+  box-shadow: 1px 1px 10px #141414;
+  border-radius: 2px;
+  pointer-events: none;
+  color: #f0f0f0;
+}
+
+.overlay {
+  position: absolute;
+  background: #292929;
+  pointer-events: none;
+}
+
+#y-axis path,
+#x-axis path {
+  stroke: #f0f0f0;
+  stroke-width: 1;
+  fill: none;
+}
+
+#y-axis text,
+#x-axis text {
+  fill: #f0f0f0;
+}
+
+#y-axis line,
+#x-axis line {
+  stroke: #f0f0f0;
+}
+
+.info {
+  font-size: 0.8em;
+  fill: #f0f0f0;
+}
